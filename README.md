@@ -16,7 +16,7 @@ Por meio dela é possível conhecer:
 
 O site está disponível em:
 
-https://jboonfim.github.io
+https://jboonfim.dev
 
 ## Tecnologias Utilizadas
 
