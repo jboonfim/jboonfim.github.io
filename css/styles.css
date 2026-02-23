@@ -172,6 +172,97 @@ body {
     opacity: 0.7;
 }
 
+/* PROJECTS */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.project-card {
+    position: relative;
+    border-radius: 0;    
+    overflow: visible;  
+    cursor: pointer;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;      
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.04);
+}
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.project-overlay p {
+    font-size: 0.85rem;
+    color: #b3b3b3;
+}
+
+.project-overlay a {
+    margin-top: 8px;
+    padding: 8px 20px;
+    border: 1px solid #38bdf8;
+    border-radius: 20px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.project-overlay a:hover {
+    background: #38bdf8;
+    color: #000;
+}
+
+.btn-outline {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 26px;
+    border-radius: 30px;
+    color: #38bdf8;
+    border: 1px solid #38bdf8;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* --- CONTACT --- */
 .certificate {
     display: grid;
