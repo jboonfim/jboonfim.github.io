@@ -1,0 +1,8 @@
+# source files the site does not use
+imgs/1.jpeg
+imgs/2.jpeg
+imgs/eu.png
+imgs/jaksonb.gif
+imgs/techstack/
+imgs/certificates/
+imgs/projects/*.png

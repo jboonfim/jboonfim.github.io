@@ -1,24 +1,34 @@
-# Página de Apresentação
+# jaksonb.dev
 
-Este repositório hospeda minha página principal utilizando GitHub Pages.
+Personal website of **Jakson Bonfim**, working at the intersection of life sciences, AI and software.
 
-## Sobre
+**Live:** https://jaksonb.dev
 
-Esta página funciona como ponto central de apresentação e direcionamento para outros projetos e aplicações desenvolvidos por mim.
+## Highlights
 
-Por meio dela é possível conhecer:
+- WebGL hero where one node system morphs through DNA, molecules, data, code and a neural network
+- Selected work: Voxaris Health (TCC, UFRJ) and PharmaTrack Traceability
+- Portuguese / English and light / dark theme, both remembered per visitor
+- Responsive, keyboard accessible and respects reduced-motion settings
 
-- Quem sou
-- Tecnologias que utilizo
-- Contato
+## Stack
 
-## Acesso
+HTML, CSS and vanilla JavaScript, with [Three.js](https://threejs.org/) for the 3D hero. No build step.
 
-O site está disponível em:
+## Run locally
 
-https://jaksonb.dev
+Open `index.html` in a browser. An internet connection is needed for the fonts and Three.js.
 
-## Tecnologias Utilizadas
+## Structure
 
-- HTML
-- CSS
+```
+index.html      page, translations and 3D scene
+styles/         stylesheet
+imgs/           portrait and project images
+cv/             résumé (PDF)
+CNAME           custom domain for GitHub Pages
+```
+
+## Contact
+
+[jaksonb.dev@gmail.com](mailto:jaksonb.dev@gmail.com) · [LinkedIn](https://www.linkedin.com/in/jaksonb/) · [GitHub](https://github.com/jboonfim)
