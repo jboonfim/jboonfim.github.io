@@ -16,7 +16,9 @@
     <link rel="canonical" href="https://jaksonb.dev/">
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F6F6F3'/%3E%3Ctext x='16' y='21' font-family='monospace' font-weight='700' font-size='13' fill='%230E8FA8' text-anchor='middle'%3EJB%3C/text%3E%3C/svg%3E">
+    <link rel="icon" href="ico/favicon.ico" sizes="48x48">
+    <link rel="icon" href="ico/icon-192.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="ico/apple-touch-icon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -316,28 +318,63 @@
 
         <!-- ============ CV ============ -->
         <section class="section cv" id="cv" aria-labelledby="cv-title">
-            <div class="wrap cv-row reveal">
-                <div>
-                    <p class="index mono">05 / CV</p>
-                    <h2 id="cv-title" class="cv-title" data-i18n="cv.title">Curriculum vitae</h2>
+            <div class="wrap cv-grid">
+                <div class="cv-text">
+                    <p class="index mono reveal">05 / CV</p>
+                    <h2 id="cv-title" class="headline reveal" data-i18n="cv.title">Curriculum vitae.</h2>
+                    <p class="cv-lead reveal" data-i18n="cv.lead">Education, projects and skills in one document.</p>
+
+                    <dl class="spec mono reveal">
+                        <div><dt data-i18n="cv.format">Format</dt><dd>PDF, 141 KB</dd></div>
+                        <div><dt data-i18n="cv.updated">Updated</dt><dd data-i18n="cv.date">October 2026</dd></div>
+                        <div><dt data-i18n="cv.file">File</dt><dd>Jakson-Bonfim-CV.pdf</dd></div>
+                    </dl>
+
+                    <div class="cv-actions reveal">
+                        <a href="cv/Jakson-Bonfim-CV.pdf" class="btn btn-solid magnetic" download data-i18n="cv.download" data-goatcounter-click="cv-download">Download CV</a>
+                        <a href="cv/Jakson-Bonfim-CV.pdf" class="btn magnetic" target="_blank" rel="noopener" data-i18n="cv.view" data-goatcounter-click="cv-view">View resume</a>
+                    </div>
                 </div>
-                <div class="cv-actions">
-                    <a href="cv/Jakson-Bonfim-CV.pdf" class="btn btn-solid magnetic" download data-i18n="cv.download">Download CV</a>
-                    <a href="cv/Jakson-Bonfim-CV.pdf" class="btn magnetic" target="_blank" rel="noopener" data-i18n="cv.view">View resume</a>
-                </div>
+
+                <a class="cv-sheet reveal" href="cv/Jakson-Bonfim-CV.pdf" target="_blank" rel="noopener" aria-label="Open the CV in a new tab">
+                    <svg viewBox="0 0 240 320" aria-hidden="true">
+                        <rect class="sheet" x="0.5" y="0.5" width="239" height="319"/>
+                        <text class="sheet-name" x="28" y="52">JAKSON BONFIM</text>
+                        <line class="sheet-rule" x1="28" y1="66" x2="212" y2="66"/>
+                        <g class="sheet-lines"><line x1="28" y1="92" x2="190" y2="92"/><line x1="28" y1="102" x2="168" y2="102"/><line x1="28" y1="112" x2="182" y2="112"/><line x1="28" y1="140" x2="120" y2="140"/><line x1="28" y1="152" x2="200" y2="152"/><line x1="28" y1="162" x2="196" y2="162"/><line x1="28" y1="172" x2="150" y2="172"/><line x1="28" y1="200" x2="120" y2="200"/><line x1="28" y1="212" x2="204" y2="212"/><line x1="28" y1="222" x2="188" y2="222"/><line x1="28" y1="232" x2="198" y2="232"/><line x1="28" y1="242" x2="140" y2="242"/><line x1="28" y1="270" x2="120" y2="270"/><line x1="28" y1="282" x2="200" y2="282"/><line x1="28" y1="292" x2="176" y2="292"/></g>
+                    </svg>
+                    <span class="mono sheet-tag">A4, p. 1</span>
+                </a>
             </div>
         </section>
 
         <!-- ============ CONTACT ============ -->
         <section class="section contact" id="contact" aria-labelledby="contact-title">
-            <div class="wrap">
-                <p class="index mono reveal" data-i18n="contact.index">06 / Contact</p>
-                <h2 id="contact-title" class="contact-title reveal" data-i18n="contact.title">Build at the<br>intersection.</h2>
-                <ul class="contact-links mono reveal">
-                    <li><a href="mailto:jaksonb.dev@gmail.com">Email <span>jaksonb.dev@gmail.com</span></a></li>
-                    <li><a href="https://github.com/jboonfim" target="_blank" rel="noopener">GitHub <span>jboonfim</span></a></li>
-                    <li><a href="https://www.linkedin.com/in/jaksonb/" target="_blank" rel="noopener">LinkedIn <span>in/jaksonb</span></a></li>
-                    <li><a href="cv/Jakson-Bonfim-CV.pdf" target="_blank" rel="noopener">CV <span>PDF</span></a></li>
+            <div class="wrap contact-grid">
+                <div>
+                    <p class="index mono reveal" data-i18n="contact.index">06 / Contact</p>
+                    <h2 id="contact-title" class="headline reveal" data-i18n="contact.title">Build at the intersection.</h2>
+                    <p class="contact-lead reveal" data-i18n="contact.lead">Open to conversations in life sciences, AI and software.</p>
+                    <p class="mono contact-where reveal" data-i18n="contact.where">Rio de Janeiro, Brazil (UTC−3)</p>
+                </div>
+
+                <ul class="channels reveal">
+                    <li class="channel">
+                        <span class="mono channel-key">Email</span>
+                        <a class="channel-val" href="mailto:jaksonb.dev@gmail.com" data-goatcounter-click="email">jaksonb.dev@gmail.com</a>
+                    </li>
+                    <li class="channel">
+                        <span class="mono channel-key">LinkedIn</span>
+                        <a class="channel-val" href="https://www.linkedin.com/in/jaksonb/" target="_blank" rel="noopener" data-goatcounter-click="linkedin">in/jaksonb</a>
+                    </li>
+                    <li class="channel">
+                        <span class="mono channel-key">GitHub</span>
+                        <a class="channel-val" href="https://github.com/jboonfim" target="_blank" rel="noopener">jboonfim</a>
+                    </li>
+                    <li class="channel">
+                        <span class="mono channel-key">CV</span>
+                        <a class="channel-val" href="cv/Jakson-Bonfim-CV.pdf" target="_blank" rel="noopener" data-goatcounter-click="cv-contact">Jakson-Bonfim-CV.pdf</a>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -350,518 +387,15 @@
         </div>
     </footer>
 
-    <script>
-        // ---------- language (EN / PT) ----------
-        const PT = {
-            "nav.about": "Sobre",
-            "nav.expertise": "Áreas",
-            "nav.work": "Projetos",
-            "nav.contact": "Contato",
-            "hero.domains": "Ciências da Vida <i>×</i> IA <i>×</i> Software",
-            "hero.statement": "Onde o código<br>encontra a vida.",
-            "hero.support": "Farmacêutico e desenvolvedor de software explorando a interseção entre ciências da vida, inteligência artificial e engenharia de software.",
-            "hero.cta1": "Ver projetos",
-            "hero.cta2": "Fale comigo",
-            "hero.fig": "fig. 0, o sistema",
-            "stage.0": "Vida",
-            "stage.1": "Moléculas",
-            "stage.2": "Dados",
-            "stage.3": "Código",
-            "stage.4": "IA",
-            "about.index": "01 / Sobre",
-            "about.title": "Trabalho na interseção entre tecnologia e ciências da vida.",
-            "about.lead": "Com formação em Farmácia e atualmente em formação em Desenvolvimento de Software, atuo na interseção entre ciências da vida, inteligência artificial e engenharia de software, desenvolvendo soluções computacionais para problemas biológicos e farmacêuticos.",
-            "about.edu": "Farmácia na Universidade Federal do Rio de Janeiro (UFRJ), último ano.<br>Análise e Desenvolvimento de Sistemas na UNINTER, com conclusão no fim de 2027.<br>CS50x em Harvard.",
-            "about.interests": "Interesses",
-            "exp.index": "02 / Áreas",
-            "exp.title": "Três sistemas, uma prática.",
-            "exp.c": "Computacional",
-            "exp.l": "Ciências da Vida",
-            "int.index": "03 / A interseção",
-            "int.title": "Ciência computacional.",
-            "claim.1": "A tecnologia fornece as ferramentas.",
-            "claim.2": "As ciências da vida trazem os problemas.",
-            "claim.3": "A IA traz novas formas de explorá-los.",
-            "int.close": "É aqui que estou construindo minha carreira.",
-            "work.index": "04 / Projetos selecionados",
-            "work.title": "Projetos selecionados.",
-            "work.repos": "Repositórios em",
-            "cv.title": "Currículo",
-            "cv.download": "Baixar CV",
-            "cv.view": "Ver currículo",
-            "contact.index": "06 / Contato",
-            "contact.title": "Construir na<br>interseção.",
-            "footer": "Código. Ciência. Descoberta.",
-            "skip": "Pular para o conteúdo",
-            "int.0": "Planejamento de Fármacos Auxiliado por Computador (CADD)",
-            "int.1": "Engenharia de Software",
-            "int.2": "Inteligência Artificial",
-            "int.3": "Descoberta Computacional de Fármacos",
-            "int.4": "Quimioinformática",
-            "int.5": "Toxicologia In Silico",
-            "vox.desc": "Plataforma para transcrição e geração de casos clínicos voltada ao ensino farmacêutico.",
-        "vox.meta": "TCC, Farmácia, UFRJ. C# / .NET",
-        "pt.desc": "Sistema de rastreabilidade farmacêutica que simula o controle de lotes, movimentações de estoque e suporte a recall.",
-        "pt.link": "Ver demonstração",
-        "soon.title": "Em breve",
-        "soon.desc": "Um projeto em modelagem molecular e predição.",
-        "soon.meta": "Modelagem molecular / Predição / Machine learning",
-        "slot.building": "estrutura em construção",
-        "slot.prep": "estudo de caso em preparação",
-            "slot.title": "Projeto",
-            "li.0": "Engenharia de Software",
-            "li.1": "Desenvolvimento Backend",
-            "li.2": "Sistemas",
-            "li.3": "Bancos de Dados",
-            "li.4": "Tecnologias Web",
-            "li.5": "Inteligência Artificial",
-            "li.6": "Computação Científica",
-            "li.7": "Quimioinformática",
-            "li.8": "Processamento de Dados",
-            "li.9": "Modelagem Computacional",
-            "li.10": "Ciências Farmacêuticas",
-            "li.11": "Descoberta de Fármacos",
-            "li.12": "Toxicologia Computacional",
-            "li.13": "Farmacologia",
-            "li.14": "Dados Biológicos",
-            "li.15": "Desenvolvimento de Fármacos",
-            "meta.title": "Jakson Bonfim · Ciências da Vida, IA, Software",
-            "meta.desc": "Jakson Bonfim, farmacêutico e desenvolvedor de software trabalhando na interseção entre ciências da vida, inteligência artificial e engenharia de software.",
-            "caption.0": "Dupla hélice de DNA, 45 pares de bases",
-            "caption.1": "Grafos moleculares, 6 estruturas, 180 átomos",
-            "caption.2": "Grafo de dados, k vizinhos mais próximos, k = 2",
-            "caption.3": "Código-fonte, 22 linhas",
-            "caption.4": "Rede neural, 7 camadas, 180 neurônios"
-        };
-        const EN = {};
-        document.querySelectorAll('[data-i18n]').forEach((el) => { EN[el.dataset.i18n] = el.innerHTML; });
-        EN['meta.title'] = document.title;
-        EN['meta.desc'] = document.querySelector('meta[name=description]').content;
-        window.I18N = { en: EN, pt: PT, lang: 'en' };
-
-        function setLang(lang) {
-            window.I18N.lang = lang;
-            const dict = lang === 'pt' ? PT : EN;
-            document.querySelectorAll('[data-i18n]').forEach((el) => {
-                const v = dict[el.dataset.i18n];
-                if (v !== undefined) el.innerHTML = v;
-            });
-            document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
-            document.title = dict['meta.title'];
-            document.querySelector('meta[name=description]').content = dict['meta.desc'];
-            const t = document.getElementById('lang-toggle');
-            t.querySelector('[data-l="en"]').className = lang === 'en' ? '' : 'off';
-            t.querySelector('[data-l="pt"]').className = lang === 'pt' ? '' : 'off';
-            t.setAttribute('aria-label', lang === 'pt' ? 'Switch language to English' : 'Mudar idioma para português');
-            window.dispatchEvent(new Event('langchange'));
-            try { localStorage.setItem('lang', lang); } catch {}
-        }
-
-        let startLang = 'en';
-        try { startLang = localStorage.getItem('lang') || (navigator.language.startsWith('pt') ? 'pt' : 'en'); } catch {}
-        setLang(startLang);
-        document.getElementById('lang-toggle').addEventListener('click', () => setLang(window.I18N.lang === 'pt' ? 'en' : 'pt'));
-
-        // ---------- theme (light / dark) ----------
-        const themeBtn = document.getElementById('theme-toggle');
-        function syncThemeBtn() {
-            const dark = document.documentElement.dataset.theme === 'dark';
-            themeBtn.textContent = dark ? '☀' : '☾';
-            themeBtn.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
-            document.querySelector('meta[name=theme-color]').content = dark ? '#050607' : '#F6F6F3';
-        }
-        themeBtn.addEventListener('click', () => {
-            const dark = document.documentElement.dataset.theme !== 'dark';
-            if (dark) document.documentElement.dataset.theme = 'dark';
-            else delete document.documentElement.dataset.theme;
-            try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch {}
-            syncThemeBtn();
-            window.dispatchEvent(new Event('themechange'));
-        });
-        syncThemeBtn();
-    </script>
-
-    <script>
-        // reveal on scroll
-        const io = new IntersectionObserver((entries) => {
-            entries.forEach((e) => {
-                if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-            });
-        }, { threshold: 0.2 });
-        document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
-
-        // magnetic buttons (fine pointers only)
-        if (matchMedia('(pointer: fine)').matches && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-            document.querySelectorAll('.magnetic').forEach((el) => {
-                el.addEventListener('pointermove', (e) => {
-                    const r = el.getBoundingClientRect();
-                    const x = (e.clientX - r.left - r.width / 2) * 0.25;
-                    const y = (e.clientY - r.top - r.height / 2) * 0.35;
-                    el.style.transform = `translate(${x}px, ${y}px)`;
-                });
-                el.addEventListener('pointerleave', () => { el.style.transform = ''; });
-            });
-        }
-    </script>
+    <script src="scripts/i18n.js"></script>
+    <script src="scripts/main.js"></script>
 
     <script type="importmap">
     { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
     </script>
-    <!-- inline so it also works when index.html is opened straight from disk -->
-    <script type="module">
-// One system, five states: LIFE -> MOLECULES -> DATA -> CODE -> AI.
-// The same 180 nodes morph between formations; edges cross-fade per formation.
-import * as THREE from 'three';
-
-const canvas = document.getElementById('system');
-const hero = document.querySelector('.hero');
-const tip = document.getElementById('node-tip');
-const coordLive = document.getElementById('coord-live');
-const caption = document.getElementById('stage-caption');
-const stageButtons = [...document.querySelectorAll('.stage-list button')];
-const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-let renderer;
-try {
-    renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-} catch {
-    canvas.remove();
-    throw new Error('WebGL unavailable');
-}
-renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 100);
-camera.position.set(0, 0, 9);
-
-const N = 180;
-const rand = (() => { let s = 7; return () => (s = (s * 16807) % 2147483647) / 2147483647; })();
-
-// ---------- formations ----------
-function dna() {
-    const p = [], e = [], meta = [];
-    const pairs = ['A–T', 'G–C', 'T–A', 'C–G'];
-    for (let i = 0; i < 45; i++) {
-        const t = i / 44, x = (t - 0.5) * 7.5, a = t * Math.PI * 4.2, r = 0.95;
-        p[i] = new THREE.Vector3(x, Math.cos(a) * r, Math.sin(a) * r);
-        p[45 + i] = new THREE.Vector3(x, Math.cos(a + Math.PI) * r, Math.sin(a + Math.PI) * r);
-        p[90 + i] = p[i].clone().lerp(p[45 + i], 1 / 3);
-        p[135 + i] = p[i].clone().lerp(p[45 + i], 2 / 3);
-        if (i < 44) e.push([i, i + 1], [45 + i, 46 + i]);
-        e.push([i, 90 + i], [90 + i, 135 + i], [135 + i, 45 + i]);
-        const bp = pairs[(i * 7) % 4];
-        meta[i] = meta[45 + i] = `backbone, bp ${i + 1}`;
-        meta[90 + i] = meta[135 + i] = `base pair ${bp}`;
-    }
-    return { p, e, meta, caption: 'DNA double helix, 45 base pairs' };
-}
-
-function molecules() {
-    // fragments grown on a honeycomb lattice: fused aromatic rings
-    const p = [], e = [], meta = [];
-    const L = 0.34, v1 = [Math.sqrt(3) * L, 0], v2 = [Math.sqrt(3) / 2 * L, 1.5 * L];
-    const key = (a, b, s) => `${a},${b},${s}`;
-    const pos = (a, b, s) => [a * v1[0] + b * v2[0], a * v1[1] + b * v2[1] + (s ? L : 0)];
-    const nb = (a, b, s) => s === 0 ? [[a, b, 1], [a, b - 1, 1], [a + 1, b - 1, 1]] : [[a, b, 0], [a, b + 1, 0], [a - 1, b + 1, 0]];
-    const centers = [[-3.2, 0.9, 0], [-0.9, 1.3, -0.6], [1.6, 0.8, 0.3], [3.3, -0.4, -0.4], [-2.2, -1.2, 0.5], [0.6, -1.3, 0]];
-    const elems = ['O', 'N', 'O', 'Cl', 'F', 'S'];
-    let idx = 0;
-    centers.forEach(([cx, cy, cz], m) => {
-        const chosen = new Map([[key(0, 0, 0), [0, 0, 0]]]);
-        const frontier = [[0, 0, 0]];
-        while (chosen.size < 30) {
-            const [a, b, s] = frontier[Math.floor(rand() * frontier.length)];
-            const opts = nb(a, b, s).filter((n) => !chosen.has(key(...n)));
-            if (!opts.length) continue;
-            const n = opts[Math.floor(rand() * opts.length)];
-            chosen.set(key(...n), n);
-            frontier.push(n);
-        }
-        const local = [...chosen.values()];
-        const rot = new THREE.Euler(rand() * 0.8 - 0.4, rand() * 1.2 - 0.6, rand() * 6.28);
-        const ids = new Map();
-        local.forEach((n) => {
-            const [x, y] = pos(...n);
-            p[idx] = new THREE.Vector3(x, y, 0).applyEuler(rot).add(new THREE.Vector3(cx, cy, cz));
-            ids.set(key(...n), idx++);
-        });
-        local.forEach((n) => {
-            const deg = nb(...n).filter((k) => ids.has(key(...k))).length;
-            nb(...n).forEach((k) => {
-                const j = ids.get(key(...k)), i = ids.get(key(...n));
-                if (j !== undefined && i < j) e.push([i, j]);
-            });
-            meta[ids.get(key(...n))] = deg === 1 ? `atom ${elems[(m + deg) % elems.length]}, terminal` : `atom C, sp², degree ${deg}`;
-        });
-    });
-    return { p, e, meta, caption: 'Molecular graphs, 6 structures, 180 atoms' };
-}
-
-function data() {
-    const p = [], e = [], meta = [];
-    for (let i = 0; i < N; i++) {
-        const u = rand() * 2 - 1, th = rand() * Math.PI * 2, r = Math.cbrt(rand());
-        const s = Math.sqrt(1 - u * u);
-        p[i] = new THREE.Vector3(s * Math.cos(th) * 3.6 * r, u * 1.7 * r, s * Math.sin(th) * 1.7 * r);
-    }
-    const seen = new Set(), deg = new Array(N).fill(0);
-    for (let i = 0; i < N; i++) {
-        const near = p.map((q, j) => [q.distanceToSquared(p[i]), j]).sort((a, b) => a[0] - b[0]).slice(1, 3);
-        near.forEach(([, j]) => {
-            const k = i < j ? `${i}-${j}` : `${j}-${i}`;
-            if (!seen.has(k)) { seen.add(k); e.push([i, j]); deg[i]++; deg[j]++; }
-        });
-    }
-    for (let i = 0; i < N; i++) meta[i] = `node ${String(i).padStart(3, '0')}, degree ${deg[i]}`;
-    return { p, e, meta, caption: 'Data graph, k-nearest neighbours, k = 2' };
-}
-
-function code() {
-    const p = [], e = [], meta = [];
-    const tokens = ['import', 'rdkit', 'def', 'predict', '(mol)', 'return', 'model', '.fit', 'for', 'in', 'smiles', 'score', '=', 'np', 'tox', 'if', 'self', 'load'];
-    const lines = [[0, 4], [0, 3], [0, 0], [0, 5], [1, 6], [1, 4], [2, 7], [2, 5], [1, 3], [0, 0], [0, 6], [1, 8], [2, 6], [3, 9], [2, 5], [1, 7], [1, 4], [0, 0], [0, 5], [1, 9], [1, 6], [0, 5]];
-    const lh = 0.2, cw = 0.2, top = (lines.length - 1) * lh / 2;
-    let idx = 0;
-    lines.forEach(([indent, len], li) => {
-        for (let k = 0; k < len && idx < N; k++) {
-            p[idx] = new THREE.Vector3(-1.2 + (indent * 2 + k) * cw, top - li * lh, 0);
-            meta[idx] = `token "${tokens[(li * 3 + k) % tokens.length]}", line ${li + 1}`;
-            if (k > 0) e.push([idx - 1, idx]);
-            idx++;
-        }
-    });
-    // spare nodes park as a blinking cursor column
-    while (idx < N) {
-        p[idx] = new THREE.Vector3(-1.2 + 10 * cw, top - (lines.length + 0.2) * lh, (idx % 7) * 0.001);
-        meta[idx++] = 'cursor';
-    }
-    return { p, e, meta, caption: 'Source code, 22 lines' };
-}
-
-function ai() {
-    const p = [], e = [], meta = [];
-    const layers = [10, 24, 36, 40, 36, 24, 10];
-    const start = [];
-    let idx = 0;
-    layers.forEach((n, l) => {
-        start[l] = idx;
-        const x = (l - (layers.length - 1) / 2) * 1.15;
-        const rr = 0.25 + n * 0.042;
-        for (let k = 0; k < n; k++) {
-            const a = (k / n) * Math.PI * 2;
-            p[idx] = new THREE.Vector3(x, Math.cos(a) * rr, Math.sin(a) * rr * 0.6);
-            meta[idx] = `neuron L${l}.${k}, σ(wx + b)`;
-            idx++;
-        }
-    });
-    layers.forEach((n, l) => {
-        if (l === layers.length - 1) return;
-        for (let k = 0; k < n; k++) {
-            for (let c = 0; c < 2; c++) e.push([start[l] + k, start[l + 1] + Math.floor(rand() * layers[l + 1])]);
-        }
-    });
-    return { p, e, meta, caption: 'Neural network, 7 layers, 180 neurons' };
-}
-
-const formations = [dna(), molecules(), data(), code(), ai()];
-const palettes = {
-    light: [0x1f9d63, 0x0e8fa8, 0x2f5bea, 0x1a1c1f, 0x7a55f0].map((c) => new THREE.Color(c)),
-    dark: [0x5bd69a, 0x4fd1e8, 0x3b6cff, 0xededed, 0x9b7bff].map((c) => new THREE.Color(c)),
-};
-let dark = document.documentElement.dataset.theme === 'dark';
-let tints = dark ? palettes.dark : palettes.light;
-
-// ---------- nodes ----------
-const sprite = (() => {
-    const c = document.createElement('canvas');
-    c.width = c.height = 64;
-    const g = c.getContext('2d');
-    const grd = g.createRadialGradient(32, 32, 0, 32, 32, 32);
-    grd.addColorStop(0, 'rgba(255,255,255,1)');
-    grd.addColorStop(0.35, 'rgba(255,255,255,0.9)');
-    grd.addColorStop(1, 'rgba(255,255,255,0)');
-    g.fillStyle = grd;
-    g.fillRect(0, 0, 64, 64);
-    return new THREE.CanvasTexture(c);
-})();
-
-const positions = new Float32Array(N * 3);
-const colors = new Float32Array(N * 3);
-const nodeGeo = new THREE.BufferGeometry();
-nodeGeo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-nodeGeo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
-const nodes = new THREE.Points(nodeGeo, new THREE.PointsMaterial({
-    size: 0.11, map: sprite, vertexColors: true, transparent: true, depthWrite: false,
-}));
-
-const lineMats = [];
-function applyTheme() {
-    dark = document.documentElement.dataset.theme === 'dark';
-    tints = dark ? palettes.dark : palettes.light;
-    // glow (additive) only reads on a dark background
-    const blend = dark ? THREE.AdditiveBlending : THREE.NormalBlending;
-    [nodes.material, ...lineMats].forEach((mt) => { mt.blending = blend; mt.needsUpdate = true; });
-}
-addEventListener('themechange', applyTheme);
-
-const system = new THREE.Group();
-system.add(nodes);
-scene.add(system);
-
-// one line set per formation, cross-faded
-const edgeSets = formations.map((f) => {
-    const geo = new THREE.BufferGeometry();
-    geo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(f.e.length * 6), 3));
-    const mat = new THREE.LineBasicMaterial({ transparent: true, opacity: 0, depthWrite: false });
-    lineMats.push(mat);
-    const lines = new THREE.LineSegments(geo, mat);
-    system.add(lines);
-    return { lines, mat, pairs: f.e };
-});
-
-// ---------- timeline ----------
-const HOLD = 3.2, MORPH = 1.8;
-let from = 0, to = 0, morphStart = -Infinity, holdUntil = HOLD, paused = false;
-const current = formations[0].p.map((v) => v.clone());
-const ease = (t) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-
-function goTo(stage, now) {
-    if (stage === to && now - morphStart > MORPH) return;
-    from = to;
-    to = stage;
-    morphStart = now;
-    holdUntil = now + MORPH + HOLD;
-    stageButtons.forEach((b, i) => b.classList.toggle('active', i === stage));
-    caption.textContent = t(formations[stage].caption, stage);
-}
-
-applyTheme();
-
-// translations for captions and node labels
-const t = (en, i) => (window.I18N && window.I18N.lang === 'pt' ? window.I18N.pt['caption.' + i] : en);
-const ptLabel = (s) => window.I18N && window.I18N.lang === 'pt'
-    ? s.replace('backbone', 'esqueleto').replace('base pair', 'par de bases').replace('atom', 'átomo').replace('terminal', 'terminal')
-        .replace('degree', 'grau').replace('node', 'nó').replace('line', 'linha').replace('neuron', 'neurônio').replace('cursor', 'cursor')
-    : s;
-const syncCaption = () => { caption.textContent = t(formations[to].caption, to); };
-addEventListener('langchange', syncCaption);
-syncCaption();
-
-const clock = new THREE.Clock();
-stageButtons.forEach((b, i) => b.addEventListener('click', () => {
-    goTo(i, clock.getElapsedTime());
-    holdUntil = clock.getElapsedTime() + MORPH + HOLD * 2.5;
-}));
-
-// ---------- pointer ----------
-const pointer = { x: 0, y: 0, px: -9999, py: -9999 };
-hero.addEventListener('pointermove', (e) => {
-    const r = canvas.getBoundingClientRect();
-    pointer.px = e.clientX - r.left;
-    pointer.py = e.clientY - r.top;
-    pointer.x = (pointer.px / r.width) * 2 - 1;
-    pointer.y = (pointer.py / r.height) * 2 - 1;
-}, { passive: true });
-hero.addEventListener('pointerleave', () => { pointer.px = pointer.py = -9999; tip.classList.remove('on'); });
-
-// ---------- layout ----------
-let narrow = false;
-function resize() {
-    const w = canvas.clientWidth, h = canvas.clientHeight;
-    renderer.setSize(w, h, false);
-    camera.aspect = w / h;
-    narrow = w / h < 1;
-    camera.position.z = narrow ? 15 : 9;
-    camera.updateProjectionMatrix();
-}
-new ResizeObserver(resize).observe(canvas);
-resize();
-
-let visible = true;
-new IntersectionObserver(([en]) => { visible = en.isIntersecting; }).observe(hero);
-
-// ---------- loop ----------
-const tmp = new THREE.Vector3(), col = new THREE.Color(), screen = new THREE.Vector3();
-let rotY = 0, rotX = 0;
-
-function frame() {
-    requestAnimationFrame(frame);
-    if (!visible) return;
-    const t = clock.getElapsedTime();
-
-    if (!reduceMotion && !paused && t > holdUntil) goTo((to + 1) % formations.length, t);
-
-    const m = Math.min(Math.max((t - morphStart) / MORPH, 0), 1);
-    const k = ease(m);
-    const A = formations[from].p, B = formations[to].p;
-    col.copy(tints[from]).lerp(tints[to], k);
-
-    // nearest node to the cursor, in screen space
-    let hover = -1, best = 26 * 26;
-    const w = canvas.clientWidth, h = canvas.clientHeight;
-
-    for (let i = 0; i < N; i++) {
-        tmp.copy(A[i]).lerp(B[i], k);
-        // gentle drift while morphing, so the change reads as a flow
-        const wob = Math.sin(m * Math.PI) * 0.35;
-        tmp.y += Math.sin(i * 1.7 + t * 1.3) * wob * 0.4;
-        tmp.z += Math.cos(i * 2.3 + t) * wob;
-        if (!reduceMotion) tmp.y += Math.sin(t * 0.8 + i * 0.15) * 0.02;
-        current[i].copy(tmp);
-        positions[i * 3] = tmp.x; positions[i * 3 + 1] = tmp.y; positions[i * 3 + 2] = tmp.z;
-
-        screen.copy(tmp).applyMatrix4(system.matrixWorld).project(camera);
-        const sx = (screen.x + 1) / 2 * w, sy = (1 - screen.y) / 2 * h;
-        const d = (sx - pointer.px) ** 2 + (sy - pointer.py) ** 2;
-        if (d < best) { best = d; hover = i; }
-    }
-
-    for (let i = 0; i < N; i++) {
-        const c = i === hover ? (dark ? 1.6 : 0.4) : 1;
-        colors[i * 3] = col.r * c; colors[i * 3 + 1] = col.g * c; colors[i * 3 + 2] = col.b * c;
-    }
-    nodeGeo.attributes.position.needsUpdate = true;
-    nodeGeo.attributes.color.needsUpdate = true;
-
-    // edges: old set fades out in the first half, new set fades in during the second
-    edgeSets.forEach((s, i) => {
-        let o = 0;
-        if (i === to) o = from === to ? 1 : Math.max(0, (m - 0.5) * 2);
-        if (i === from && from !== to) o = Math.max(o, 1 - m * 2);
-        s.mat.opacity = o * (dark ? 0.42 : 0.5);
-        s.mat.color.copy(col);
-        s.lines.visible = o > 0.001;
-        if (!s.lines.visible) return;
-        const arr = s.lines.geometry.attributes.position.array;
-        s.pairs.forEach(([a, b], j) => {
-            const pa = current[a], pb = current[b];
-            arr[j * 6] = pa.x; arr[j * 6 + 1] = pa.y; arr[j * 6 + 2] = pa.z;
-            arr[j * 6 + 3] = pb.x; arr[j * 6 + 4] = pb.y; arr[j * 6 + 5] = pb.z;
-        });
-        s.lines.geometry.attributes.position.needsUpdate = true;
-    });
-
-    // tooltip reveals what each node is in the current state
-    if (hover >= 0 && m === 1) {
-        tip.textContent = ptLabel(formations[to].meta[hover]);
-        tip.style.transform = `translate(${pointer.px + 12}px, ${pointer.py + 12}px)`;
-        tip.classList.add('on');
-    } else {
-        tip.classList.remove('on');
-    }
-    coordLive.innerHTML = `x ${pointer.x.toFixed(3)}<br>y ${(-pointer.y).toFixed(3)}`;
-
-    // camera-ish motion: slow orbit plus pointer parallax
-    const tx = reduceMotion ? 0 : pointer.y * 0.25;
-    const ty = (reduceMotion ? 0 : Math.sin(t * 0.15) * 0.35) + pointer.x * 0.4;
-    rotX += (tx - rotX) * 0.05;
-    rotY += (ty - rotY) * 0.05;
-    system.rotation.set(rotX, rotY, 0);
-    system.position.set(narrow ? 0 : 1.4, narrow ? 1.2 : 0.2, 0);
-
-    renderer.render(scene, camera);
-}
-frame();
-    </script>
+    <script src="scripts/system.js"></script>
+    <!-- visitor stats: https://jboonfim.goatcounter.com -->
+    <script data-goatcounter="https://jboonfim.goatcounter.com/count"
+            async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>

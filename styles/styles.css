@@ -850,64 +850,159 @@ body {
 }
 
 /* ---------- CV ---------- */
-.cv-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    gap: 28px;
+.cv-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: clamp(40px, 7vw, 120px);
+    align-items: center;
 }
 
-.cv-title {
-    font-weight: 500;
-    font-size: clamp(1.8rem, 3.6vw, 2.8rem);
-    letter-spacing: -0.03em;
-    line-height: 1;
+.cv-lead,
+.contact-lead {
+    margin-top: 24px;
+    font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+    color: var(--muted);
+    max-width: 32rem;
+}
+
+.spec {
+    margin-top: 36px;
+    border-top: 1px solid var(--line);
+    max-width: 30rem;
+}
+
+.spec > div {
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.spec dt {
+    color: var(--dim);
 }
 
 .cv-actions {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+/* a line-drawn first page of the CV */
+.cv-sheet {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    justify-self: center;
+    color: var(--muted);
+    transform: rotate(-2deg);
+    transition: transform 0.5s cubic-bezier(.2, .8, .2, 1), color 0.3s;
+}
+
+.cv-sheet:hover {
+    transform: rotate(0deg) translateY(-6px);
+    color: var(--cyan);
+}
+
+.cv-sheet svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.sheet {
+    fill: var(--bg-2);
+    stroke: var(--line-2);
+}
+
+.sheet-name {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.02em;
+    fill: var(--text);
+}
+
+.sheet-rule {
+    stroke: currentColor;
+    stroke-width: 1.5;
+}
+
+.sheet-lines line {
+    stroke: var(--line-2);
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+.sheet-tag {
+    position: absolute;
+    right: 0;
+    bottom: -26px;
+    color: var(--dim);
 }
 
 /* ---------- Contact ---------- */
-.contact-title {
-    font-weight: 700;
-    font-size: clamp(3rem, 10vw, 9rem);
-    line-height: 0.88;
-    letter-spacing: -0.055em;
-    text-transform: uppercase;
-}
-
-.contact-links {
-    list-style: none;
-    margin-top: clamp(48px, 7vw, 88px);
+.contact-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    border-top: 1px solid var(--line);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    gap: clamp(40px, 7vw, 120px);
+    align-items: end;
 }
 
-.contact-links a {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    padding: 20px 16px 20px 0;
+.contact-where {
+    margin-top: 28px;
+    color: var(--dim);
+}
+
+.channels {
+    list-style: none;
+    border-top: 1px solid var(--line-2);
+}
+
+.channel {
+    position: relative;
+    display: grid;
+    grid-template-columns: 6.5rem minmax(0, 1fr);
+    align-items: baseline;
+    gap: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--line-2);
+}
+
+/* hover: an accent rule draws across the row */
+.channel::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    background: var(--cyan);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s cubic-bezier(.2, .8, .2, 1);
+}
+
+.channel:hover::after {
+    transform: scaleX(1);
+}
+
+.channel-key {
+    color: var(--dim);
+}
+
+.channel-val {
+    font-size: clamp(1.15rem, 2.2vw, 1.6rem);
+    letter-spacing: -0.02em;
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-size: 0.8rem;
+    overflow-wrap: anywhere;
     transition: color 0.2s;
 }
 
-.contact-links a span {
-    text-transform: none;
-    letter-spacing: 0;
-    color: var(--dim);
-    overflow-wrap: anywhere;
-}
-
-.contact-links a:hover {
+.channel:hover .channel-val {
     color: var(--cyan);
 }
 
@@ -1008,8 +1103,13 @@ body {
         grid-column: 1 / -1;
         margin-top: 0;
     }
-    .contact-links {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .cv-grid,
+    .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .cv-sheet {
+        max-width: 240px;
+        justify-self: start;
     }
     .coord-tl {
         display: none;
@@ -1048,6 +1148,10 @@ body {
 }
 
 @media (max-width: 560px) {
+    .channel {
+        grid-template-columns: minmax(0, 1fr);
+        row-gap: 4px;
+    }
     .nav-list {
         gap: 12px;
     }

@@ -22,8 +22,9 @@ Open `index.html` in a browser. An internet connection is needed for the fonts a
 ## Structure
 
 ```
-index.html      page, translations and 3D scene
+index.html      page markup
 styles/         stylesheet
+scripts/        i18n.js (PT/EN, theme), main.js (scroll reveal, buttons), system.js (3D hero)
 imgs/           portrait and project images
 cv/             résumé (PDF)
 CNAME           custom domain for GitHub Pages

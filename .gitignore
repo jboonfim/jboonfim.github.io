@@ -6,3 +6,7 @@ imgs/jaksonb.gif
 imgs/techstack/
 imgs/certificates/
 imgs/projects/*.png
+
+# icon sources (the site uses the generated favicon files)
+ico/jaksonb.png
+ico/jaksonb.ico
